@@ -1,0 +1,696 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+        to bottom,
+        #080808,
+        #120d0d,
+        #080808
+    );
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+/* NAV */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 4%;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,215,0,0.15);
+}
+
+/* LOGO */
+.logo img {
+    width: 5vw;
+    min-width: 55px;
+    max-width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+/* INTRO */
+.intro,
+.ny-section{
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0,5%;
+    padding: 3% 2%;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+}
+.intro-texto{
+
+
+    width: 45%;
+    text-align: left;
+}
+.intro-texto p{
+    width: 80%;
+    color: rgba(255,255,255,0.72);
+    font-size: 1.1vw;
+    line-height: 190%;
+
+}
+
+.ny-section{
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    background: transparent;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.intro-img img,
+.ny-img img{
+    width: 100%;
+    height: 38vw;
+    object-fit: cover;
+    border-radius: 0.5vw;
+    opacity: 0.92;
+}
+.intro-img,
+.ny-img
+{
+  width: 45%;  
+}
+
+.intro-img img,
+.ny-img img{
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+    object-position: top;
+
+    border-radius: 0.5vw;
+    opacity: 0.92;
+}
+/* DERECHA */
+.ny-text{
+    width: 45%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 6%;
+}
+
+/* TITULO */
+.intro-texto h2,
+.ny-text h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5vw;
+    font-weight: 300;
+    color: #d4af37;
+    line-height: 0.9;
+    margin-bottom: 4%;
+    width: 80%;
+}
+/* SUBTITULO */
+.ny-text h3{
+    font-size: 1rem;
+    letter-spacing: 4px;
+    margin-bottom: 2%;
+    color: #d4af37;
+}
+
+/* TEXTO */
+.ny-text p{
+    width: 70%;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.75);
+        width: 80%;
+    color: rgba(255,255,255,0.72);
+    font-size: 1.1vw;
+    line-height: 190%;
+}
+
+/* videos de episodios*/
+.video-container {
+    width: 85%;      
+    max-width: 450px; 
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    height: auto !important;
+    border-radius: 0.5vw;
+    display: block;
+}
+
+/* BOTON */
+.ny-text a,
+.intro-texto a {
+    width: fit-content;
+    padding: 0.7rem 1.8rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  align-items: left;
+}
+
+.ny-text a:hover{
+    background: white;
+    color: black;
+}
+
+
+
+/* MENU */
+nav ul {
+    display: flex;
+    gap: 2vw;
+
+    list-style: none;
+}
+
+nav a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 0.8vw;
+    letter-spacing: 0.15vw;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* HEADER */
+header {
+    height: 65vh;
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.55)
+    ),
+    url(../img/nyc.noche.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-logo{
+    width: 40vw;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.95;
+}
+header p {
+    margin-top: 10px;
+    color: white;
+}
+
+/* TITULOS */
+.titulos h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5vw;
+    font-weight: 300;
+    color: #d4af37;
+    line-height: 0.9;
+    letter-spacing: 0.05vw;
+}
+
+.titulos {
+    text-align: center;
+    margin: 20px 0;
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-top: 6%;
+}
+
+/* HOME */
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+.home img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid #333;
+}
+
+/* CUADROS (personajes, episodios, etc) */
+.personsjesde{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+    padding: 4% 8%;
+}
+.cuadro{
+    width: 100%;
+    display: flex;
+    gap: 1.5vw;
+    padding: 1.5vw;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 1.2vw;
+    backdrop-filter: blur(8px);
+    text-align: left;
+    transition: 0.4s;
+}
+.cuadro img{
+    width: 8vw;
+    height: 11vw;
+    object-fit: cover;
+    border-radius: 0.8vw;
+    flex-shrink: 0;
+}
+.actor {
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0;
+}
+.cuadro:hover{
+    transform: translateY(-4px);
+    border-color: rgba(212,175,55,0.4);
+    background: rgba(255,255,255,0.05);
+}
+/* BOTONES */
+section a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid gold;
+    text-decoration: none;
+    color: gold;
+}
+section a:hover {
+    background-color: gold;
+    color: black;
+}
+/* MINI HOME */
+
+/* MINI HOME */
+
+.mini-home{
+    width: 85%;
+    margin: 6% auto;
+
+    display: flex;
+    gap: 1vw;
+}
+
+.mini-card{
+    width: 25%;
+
+    position: relative;
+
+    overflow: hidden;
+    border-radius: 0.5vw;
+
+    color: white;
+    text-decoration: none;
+}
+
+.mini-card img{
+    width: 100%;
+    height: 420px;
+
+    object-fit: cover;
+}
+
+.mini-info{
+    position: absolute;
+
+    bottom: 0;
+
+    padding: 8%;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0,0,0,0.85)
+    );
+}
+
+.mini-info h2{
+    font-size: 2vw;
+    margin-bottom: 4%;
+}
+
+.mini-info p{
+    font-size: 0.8vw;
+    line-height: 150%;
+}
+
+
+/* FORMULARIO */
+form {
+    max-width: 550px;
+    width: 35%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background: rgba(255,255,255,0.03);
+    padding: 3%;
+    padding: 1vw 1.2vw;
+    border-radius: 1.2vw;
+    backdrop-filter: blur(8px);
+}
+
+input,
+textarea{
+    padding: 1vw 1.2vw;
+    border: none;
+    border-radius: 0.8vw;
+    font-family: inherit;
+    background: rgba(255,255,255,0.96);
+    color: black;
+    transition: 0.3s;
+}
+button{
+    padding: 1vw;
+    background-color: #d4af37;
+    color: black;
+    border: none;
+    border-radius: 0.8vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+/* EXPLORAR */
+
+.explorar{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin: 5% 0;
+ 
+}
+
+/* EPISODIOS */
+.episodios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.episodios .cuadro {
+    width: 50%;
+    max-width: 400px;
+}
+.ny-img iframe {
+    width: 80%; 
+    aspect-ratio: 16 / 9; 
+    height: auto; 
+    border-radius: 0.5vw;
+    opacity: 0.92;
+    box-shadow: 0 0 30px rgba(0,0,0,0.35);
+}
+
+/* ESCANDALOS */
+.contenedor-envio-escandalo {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+}
+.caja-envio-escandalo {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border: 1px solid gold;
+    background-color: #ffffff;
+    text-align: center;
+}
+.caja-envio-escandalo input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    background: black;
+    color: white;
+}
+.caja-envio-escandalo button {
+    width: 100%;
+}
+
+.gossip-layout{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+    padding: 6%;
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.85)
+    ),
+    url(../img/nyc.noche.png);
+    background-size: cover;
+    background-position: center;
+}
+.gossip-menu{
+    width: 20%;
+    text-align: left;
+}
+.gossip-menu h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2vw;
+    color: #d4af37;
+    margin-bottom: 2%;
+}
+.gossip-box{
+    width: 42%;
+    background: rgba(255,255,255,0.95);
+    padding: 3%;
+    border-radius: 1vw;
+    color: black;
+    text-align: left;
+    margin: 0 auto;
+}
+.gossip-box h4{
+    font-size: 1.5vw;
+    margin-bottom: 4%;
+}
+.gossip-box textarea{
+    width: 100%;
+    height: 15vw;
+    resize: none;
+    border: none;
+    padding: 4%;
+    background: #f2f2f2;
+    font-family: inherit;
+    margin-bottom: 4%;
+}
+.gossip-box button{
+    width: 100%;
+    padding: 1vw;
+    background: #d4af37;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.gossip-box button:hover{
+    opacity: 0.8;
+}
+.xoxo{
+    margin-top: 5%;
+    font-size: 0.9vw;
+    color: #444;
+    line-height: 170%;
+}
+.gossip-profiles{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.profile span{
+    color: white;
+    font-size: 1vw;
+}
+
+
+/* GALERIA */
+
+.galeria{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5vw;
+    padding: 4% 0;
+}
+
+.galeria img{
+    width: 100%;
+    border-radius: 0.5vw;
+    transition: 0.4s;
+}
+
+.galeria img:hover{
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+/* tamaños */
+
+.horizontal{
+    grid-column: span 2;
+    height: 25vw;
+    object-fit: cover;
+}
+
+.vertical{
+    height: 25vw;
+    object-fit: cover;
+}
+
+.cuadrada{
+    height: 25vw;
+    object-fit: cover;
+}
+
+/* CAROUSEL */ 
+
+.carousel{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 4% 0;
+    scroll-behavior: smooth;
+}
+
+.carousel-track{
+    display: flex;
+    gap: 2vw;
+    width: max-content;
+}
+
+.carousel-track img{
+    width: 18vw;
+    height: 30vw;
+    object-fit: cover;
+    border-radius: 1vw;
+    flex-shrink: 0;
+    opacity: 0.92;
+    transition: 0.4s;
+}
+
+.carousel-track img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+/*escanadalos*/
+
+.feed-escandalos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Crea columnas automáticas */
+    gap: 30px; /* Espacio entre las cajas */
+    padding: 50px 10%; /* Espacio a los costados */
+    justify-items: center;
+}
+
+.card-escandalo {
+    background-color: white;
+    border-radius: 20px; /* Bordes redondeados como tu box principal */
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* Sombra para dar profundidad */
+    color: #333;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.card-escandalo h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.imagen-contenedor img {
+    width: 300px;
+    height: 280px;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.texto-escandalo p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.firma {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: #d4af37; /* El color dorado que usas en el botón */
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+#seccion-episodios h2 {
+    font-size: 2.2vw 
+}
+
+/* FOOTER */
+footer{
+
+    align-items: center;
+    gap: 1vw;
+    background-color: rgb(29, 29, 29);
+    color: #d4af37;
+    padding: 2%;
+    text-align: left;
+}
+
+/* imagen */
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.footer img{
+    width: 4vw;
+}
